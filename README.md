@@ -84,11 +84,11 @@ hookshot()
 })
 ```
 
-Finally, the `hook` event is fired for every post-receive hook that is send by GitHub.
+Finally, the `hook` event is fired for every post-receive hook that is sent by GitHub.
 
 ```javascript
 hookshot()
-.on('push', function(info) {
+.on('hook', function(info) {
   console.log('ref ' + info.ref + ' was pushed.')
 })
 ```
